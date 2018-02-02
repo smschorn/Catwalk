@@ -13,7 +13,7 @@ Each complete oufit will be scored, the better the outfit the more points you re
 
 ## Wireframe
 
-
+![Catwalk Wireframe](https://github.com/smschorn/Catwalk/blob/master/Catwalk%20Wireframe.png?raw=true)
 
 
 ## Initial thoughts on game structure
