@@ -21,6 +21,7 @@ User stories:
 
 
 Wireframes:
+![Catwalk Wireframe](https://github.com/smschorn/Catwalk/blob/master/Catwalk%20Wireframe.png?raw=true)
 
 
 How-to-use instructions:
