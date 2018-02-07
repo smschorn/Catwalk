@@ -52,3 +52,23 @@ topSelection.addEventListener('click', (event) => {
 		topDisplay.style.backgroundSize = 'contain'
 	}
 })
+
+const bottomDisplay=document.querySelector('#bottom')
+const bottomSelection=document.querySelector('#bottom-choices')
+bottomSelection.addEventListener('click', (event) => {
+	if (event.target.classList.contains('choice')) {
+		const url = event.target.getAttribute('src')
+		bottomDisplay.style.backgroundImage=`url(${url})`
+		bottomDisplay.style.backgroundSize = 'contain'
+	}
+})
+
+const shoesDisplay=document.querySelector('#shoes')
+const shoesSelection=document.querySelector('#shoes-choices')
+shoesSelection.addEventListener('click', (event) => {
+	if (event.target.classList.contains('choice')) {
+		const url = event.target.getAttribute('src')
+		shoesDisplay.style.backgroundImage=`url(${url})`
+		shoesDisplay.style.backgroundSize = 'contain'
+	}
+})
