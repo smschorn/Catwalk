@@ -24,24 +24,33 @@ body {
 }
 
 #top {
-	height: 200px;
-	width: 200px;
+	height: 190px;
+	width: 190px;
 	background-color: red;
 	background-repeat:no-repeat;
+	background-position: center center;
+	background-size: contain;
+	margin: 5px;
 }
 
 #bottom {
-	height: 200px;
-	width: 200px;
+	height: 190px;
+	width: 190px;
 	background-color: pink;
 	background-repeat:no-repeat;
+	background-position: center center;
+	background-size: contain;
+	margin: 5px;
 }
 
 #shoes {
-	height: 200px;
-	width: 200px;
+	height: 190px;
+	width: 190px;
 	background-color: green;
 	background-repeat:no-repeat;
+	background-position: center center;
+	background-size: contain;
+	margin: 5px;
 }
 
 #right-col {
