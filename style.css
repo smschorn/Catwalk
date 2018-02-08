@@ -9,24 +9,17 @@ body {
 	font-family: cursive;
 }
 
-/* h1 {
-	color:  white;
-	text-align: center;
-	font-family: serif;
-	font-size: 50px;
-} */
-
 #left-col {
 	float: left;
 	height: 600px;
-	background-color: blue;
+	/* background-color: blue; */
 	width: 200px;
 }
 
 #top {
 	height: 190px;
 	width: 190px;
-	background-color: red;
+	/* background-color: red; */
 	background-repeat:no-repeat;
 	background-position: center center;
 	background-size: contain;
@@ -36,7 +29,7 @@ body {
 #bottom {
 	height: 190px;
 	width: 190px;
-	background-color: pink;
+	/* background-color: pink; */
 	background-repeat:no-repeat;
 	background-position: center center;
 	background-size: contain;
@@ -46,7 +39,7 @@ body {
 #shoes {
 	height: 190px;
 	width: 190px;
-	background-color: green;
+	/* background-color: green; */
 	background-repeat:no-repeat;
 	background-position: center center;
 	background-size: contain;
@@ -56,14 +49,14 @@ body {
 #right-col {
 	float: right;
 	height: 600px;
-	background-color: orange;
+	/* background-color: orange; */
 	width: 600px;
 }
 
 .choice {
 	height: 190px;
 	width: 190px;
-	background-color: white;
+	/* background-color: white; */
 	float: left;
 	margin: 5px;
 }
