@@ -2,6 +2,8 @@
 Explanations of the technologies used:
   - jQuery
   - vanilla Javascript
+  - CSS
+  - Object oriented programming
 
 
 Approach taken:
@@ -16,8 +18,8 @@ Approach taken:
 
 User stories:
   - The user will initially see the game homepage.
-  - The game will be initialized by xxxxx
-  - 
+  - The game will be initialized by user acknowledging welcome prompt.
+  - Once the user has walked the runway, the outfit will be judged.
 
 
 Wireframes:
