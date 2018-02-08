@@ -10,7 +10,6 @@ class Choice {
 		imageTag.attr('class', 'choice');
 		imageTag.attr('data-part', this.part);
 		imageTag.click(function(imageLeft) {
-			alert("image clicked");
 		});
 		$('#' + this.part + '-choices').append(imageTag);
 	}

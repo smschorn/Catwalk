@@ -3,6 +3,12 @@ body {
 	color: white;
 }
 
+#logo {
+	font-size: 60px;
+	text-align: center;
+	font-family: cursive;
+}
+
 /* h1 {
 	color:  white;
 	text-align: center;
@@ -18,21 +24,24 @@ body {
 }
 
 #top {
-	height: 180px;
-	width: 180px;
+	height: 200px;
+	width: 200px;
 	background-color: red;
+	background-repeat:no-repeat;
 }
 
 #bottom {
-	height: 180px;
-	width: 180px;
+	height: 200px;
+	width: 200px;
 	background-color: pink;
+	background-repeat:no-repeat;
 }
 
 #shoes {
-	height: 180px;
-	width: 180px;
+	height: 200px;
+	width: 200px;
 	background-color: green;
+	background-repeat:no-repeat;
 }
 
 #right-col {
