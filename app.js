@@ -42,11 +42,49 @@ shoesChoice2.loadImage();
 let shoesChoice3 = new Choice('shoes', 'images/choices/shoes/choice-3.jpeg', 'A');
 shoesChoice3.loadImage();
 
+alert('Welcome to the Catwalk!  Let\'s get started.')
+
 const game = {
 	top: null,
 	bottom: null,
-	shoes: null
+	shoes: null,
+	readyToWalk: function() {
+		if (this.top && this.bottom && this.shoes)
+			$('#walk').show();
+	},
+	judge: function() {
+		if (this.top === 'A' && this.bottom === 'A' && this.shoes === 'A') {
+			alert('You slayed it!  Cover of Vogue in your future.')
+		}
+		else if (this.top === 'B' && this.bottom === 'B' && this.shoes === 'B') {
+			alert('Oh, a risk taker...we like that, just didn\'t pay off.')
+		}
+		else if (this.top === 'C' && this.bottom === 'C' && this.shoes === 'C') {
+			alert('Yikes, you were arrested by the fashion police!')
+		}
+		else {
+			alert('Give it another shot.')
+		}
+		this.reset()
+	},
+	reset: function() {
+		this.top = null;
+		this.bottom = null;
+		this.shoes = null;
+		$('#walk').hide();
+		const topDisplay = document.querySelector('#top')
+		topDisplay.style.backgroundImage = null;
+		const bottomDisplay = document.querySelector('#bottom')
+		bottomDisplay.style.backgroundImage = null
+		const shoesDisplay = document.querySelector('#shoes')
+		shoesDisplay.style.backgroundImage = null
+	}
 }
+
+const walkButton = document.querySelector('#walk')
+walkButton.addEventListener('click', (event) => {
+	game.judge()
+})
 
 const topDisplay = document.querySelector('#top')
 const topSelection = document.querySelector('#top-choices')
@@ -57,6 +95,7 @@ topSelection.addEventListener('click', (event) => {
 		topDisplay.style.backgroundSize = 'contain'
 		const value = event.target.getAttribute('data-value');
 		game.top = value;
+		game.readyToWalk();
 	}
 })
 
@@ -69,7 +108,7 @@ bottomSelection.addEventListener('click', (event) => {
 		bottomDisplay.style.backgroundSize = 'contain';
 		const value = event.target.getAttribute('data-value');
 		game.bottom = value;
-
+		game.readyToWalk();
 	}
 })
 
@@ -82,5 +121,6 @@ shoesSelection.addEventListener('click', (event) => {
 		shoesDisplay.style.backgroundSize = 'contain'
 		const value = event.target.getAttribute('data-value');
 		game.shoes = value;
+		game.readyToWalk();
 	}
 })
