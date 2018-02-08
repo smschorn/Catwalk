@@ -42,7 +42,7 @@ shoesChoice2.loadImage();
 let shoesChoice3 = new Choice('shoes', 'images/choices/shoes/choice-3.jpeg', 'A');
 shoesChoice3.loadImage();
 
-alert('Welcome to the Catwalk!  Let\'s get started.')
+alert('Welcome to the Catwalk!  Let\'s get started.  Start creating your outfit by clicking on an article of clothing.')
 
 const game = {
 	top: null,
